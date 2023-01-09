@@ -1,0 +1,14 @@
+{
+  "name": "vendor_name/60591_BD",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "composer require vlucas/phpdotenv",
+  "authors": [
+    {
+      "name": "Евгения",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+  }
+}
