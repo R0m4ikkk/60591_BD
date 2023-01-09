@@ -7,4 +7,4 @@ try {
 }
 catch(PDOException $e) {
     echo "Ошибка подключения к БД: " . $e->getMessage(), $e->getCode( );
-    die();
+    die();}
