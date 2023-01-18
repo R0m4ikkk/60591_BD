@@ -1,8 +1,8 @@
 <?php
-require "dbconnect.php";
-$result = $conn->query("SELECT *  FROM car") ;
-echo "<h2>Avtomobili</h2>";
-while ($row = $result->fetch()) {
-    echo $row['model_name'];
-    echo $row['price_day']."<br>";
-}
+require('dbconnect.php');
+require('components/meta.php');
+require ('components/auth.php');
+require('components/header.php');
+require('components/main.php');
+require ('components/message.php');
+require('components/footer.php');
