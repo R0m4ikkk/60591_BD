@@ -47,7 +47,7 @@
             </p>
             <p>
                 <label for="image" id="id11">Изображение:</label>
-                <input name="img_url" type="file">
+                <input name="filename" type="file">
             </p>
             <p><input type="submit" value="Создать"></p>
         </form>

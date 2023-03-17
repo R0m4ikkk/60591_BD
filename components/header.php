@@ -14,8 +14,8 @@
         {
             echo(' <li><a href="components/product_add.php">Добавить карточку авто</a></li>');
         }
-        echo('<li><a href="catalog.php"> Каталог</a></li>');
-        echo('<li><a href="index.php"> Главная</a></li>');
+        echo('<li><a href="../catalog.php"> Каталог</a></li>');
+        echo('<li><a href="../index.php"> Главная</a></li>');
     }
     else
     {

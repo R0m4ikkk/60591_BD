@@ -1,3 +1,4 @@
+
 <section class="banner">
     <p>А вы знали, что <?= $today ?> года<br> является самым подходящим временем для аренды?</p>
 </section>
@@ -12,11 +13,10 @@
             <?php endfor; ?>
         </ol>
         <ul class="products-list">
-
             <?php while ($item = $result->fetch()) {?>
                 <li>
                     <a class="product-card"  href="components/product.php?product_id=<?= $item['id'] ?>">
-                        <h3><?= $item['title'] ?></h3>
+                        <h3><? echo $title ?></h3>
                         <img src="<?= $item['img_url'] ?>" width="156" height="120" alt="<?= $item['title'] ?>">
                         <div class="product-options">
                             <span class="price"><?= $item['price'] ?></span>
@@ -30,3 +30,4 @@
         </ul>
     </div>
 </section>
+
