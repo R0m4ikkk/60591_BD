@@ -10,7 +10,9 @@
   "App\\": "src",
   "Framework\\": "framework"
 },
-
+   "files": [
+     "src/routes.php"
+   ]
 }, "require-dev": {
 "phpunit/phpunit": "9"
 }

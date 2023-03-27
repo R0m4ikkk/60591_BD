@@ -21,7 +21,7 @@ class UserController extends Controller
     {
         $users = new UserModel();
 
-//        var_dump($users->getById($id));
+        var_dump($users->getById($id));
         return $this->view('user.php', ['users' =>  $users->getById($id)]);
 
     }
