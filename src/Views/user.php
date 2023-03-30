@@ -8,16 +8,12 @@
     <title>Document</title>
 </head>
 <body>
+<?php require 'app/views/header.php'?>
 <h1>Сведения о пользователе:</h1>
-<ul>
-    <?php foreach ($data['users'] as $user): ?>
-        <li>
-            Имя: <?=$user->firstname?> <br>
-            Фамилия: <?=$user->lastname?> <br>
-            Логин: <?=$user->login?> <br>
-        </li>
-    <?php endforeach; ?>
 
-</ul>
+<?=$data['user']->firstname?>
+<?=$data['user']->lastname?><br>
+<?=$data['user']->login?>
+
 </body>
 </html>

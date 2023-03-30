@@ -14,4 +14,3 @@ class MyController extends Controller
 ////        return $this->view('data.php',['name'=>$user_name,'group'=>$group_name]);
 ////    }
 }
-

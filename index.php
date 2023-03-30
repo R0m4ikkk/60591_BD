@@ -13,9 +13,12 @@ if(file_exists(".env"))
     $dotenv = Dotenv::createImmutable(__DIR__);
     $dotenv->load();
 }
-
+else{
+    echo "Ошибка загрузки ENV<br>";
+}
+\Framework\Container::getApp()->run();
 $request = new Request();
-Application::init();
+
 echo (new Router($request))->getContent();
 exit();
 
