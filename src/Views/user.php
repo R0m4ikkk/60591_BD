@@ -12,9 +12,9 @@
 <ul>
     <?php foreach ($data['users'] as $user): ?>
         <li>
-            <?=$user->firstname?>
-            <?=$user->lastname?>
-            <?=$user->login?>
+            Имя: <?=$user->firstname?> <br>
+            Фамилия: <?=$user->lastname?> <br>
+            Логин: <?=$user->login?> <br>
         </li>
     <?php endforeach; ?>
 
