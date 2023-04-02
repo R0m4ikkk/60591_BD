@@ -13,7 +13,7 @@ if (file_exists(".env"))
 {
     $dotenv = Dotenv::createImmutable(__DIR__);
     $dotenv->load(); //все параметры окружения помещаются в массив $_ENV
-    echo "Окружение загружено<p>";
+//        echo "Окружение загружено<p>";
     // var_dump($_ENV);
 }
 else {
@@ -22,7 +22,7 @@ else {
 Container::getApp()->run();
 
 
-exit();
+die();
 
 
 
@@ -41,7 +41,7 @@ echo '<main class="container" style="margin-top: 100px">';
 switch ($_GET['page']){
     case 'c':
         if (isset($_SESSION['login'])) {
-            require "categories.php";
+            require "car.php";
         }
         else{
             $msg = 'Войдите в систему для просмотра и создания категорий';

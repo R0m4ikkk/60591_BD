@@ -17,7 +17,7 @@ class AuthController extends Controller
             $user = UserModel::getWhere('login', '=', $login)[0];
             if ($user){
                 if ($password == $user->password){
-                    $_SESSION['login'] = $user->email;
+                    $_SESSION['login'] = $user->login;
                     $_SESSION['firstname'] = $user->firstname;
                     $_SESSION['lastname'] = $user->lastname;
                     $_SESSION['id'] = $user->id;
@@ -28,13 +28,13 @@ class AuthController extends Controller
             }
             else $_SESSION['msg'] = "Неправильный логин";
         }
-        header('Location: /page/hello');
+        header('Location: /'); // /page/hello
         exit();
     }
     public function logout(Request $request){
         $_SESSION = null;
         $_SESSION['msg'] =  "Вы успешно вышли из системы";
-        header('Location: /page/hello');
+        header('Location: /');  // /page/hello
         exit();
     }
 }

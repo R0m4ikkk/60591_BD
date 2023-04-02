@@ -5,7 +5,7 @@ namespace Framework;
 class Controller
 {
     public function view($template_path, $data){
-        echo ('src/Views/'.$template_path.'<p>');
+        echo ('src/Views/'.$template_path.'<p><br>');
         $template = file_get_contents('src/Views/'.$template_path);
         ob_start();
         eval("?>".$template."<?");
