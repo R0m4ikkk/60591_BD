@@ -22,7 +22,7 @@ class UserController extends Controller
         if($request->getUser()->id != $id){
             throw new UnauthorizedException('');
         }
-//        var_dump($users->getById($id));
+        var_dump($users->getById($id));
         return $this->view('user.php', ['user' =>  UserModel::getById($id)]);
 
     }

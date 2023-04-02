@@ -9,7 +9,6 @@ class MysqlModel extends Model
     protected static \PDO $connection;
     protected static $table = '';
 
-
     /**
      * MysqlModel constructor.
      */
@@ -20,9 +19,9 @@ class MysqlModel extends Model
     public static function getWhere($field = null, $operation = null, $value = null)
     {
         $table = static::$table;
-        $query = self::getConnection()->prepare("SELECT * FROM ${table} WHERE ".$field." " .$operation." '".$value."'");
+        $query = self::getConnection()->prepare("SELECT * FROM ${table} WHERE ".$field." " .$operation."'".$value."'");
 //    $query->bindValue(':value', $value);
-//        echo $query->queryString;
+        echo $query->queryString ;
         $query->execute();
         return self::fetchAll($query);
     }

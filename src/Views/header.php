@@ -1,5 +1,5 @@
 <?php if($data['user']) { ?>
-    Текущий пользователь: <?=$data['user']->email?>
+    Текущий пользователь: <?=$data['user']->login ?>
     <br>
     <a href="/logout">Выйти</a>
 <?php } else {?>

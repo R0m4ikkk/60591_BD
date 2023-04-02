@@ -8,14 +8,14 @@
     <title>Document</title>
 </head>
 <body>
-<?php require 'app/views/header.php'?>
+<?php require 'src/views/header.php'?>
 <h1>Список пользователей:</h1>
 <ul>
     <?php foreach ($data['users'] as $user): ?>
         <li>
-            <?=$user->firstname?>
-            <?=$user->lastname?>
-            <?=$user->email?>
+            Имя: <?=$user->firstname?> <br>
+            Фамилия: <?=$user->lastname?><br>
+            Почта(логин): <?=$user->email?><br>
         </li>
     <?php endforeach; ?>
 </ul>

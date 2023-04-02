@@ -8,12 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-<?php require 'app/views/header.php'?>
+<?php require 'src/views/header.php'?>
 <h1>Сведения о пользователе:</h1>
 
-<?=$data['user']->firstname?>
+Имя:<?=$data['user']->firstname?><br>
 <?=$data['user']->lastname?><br>
-<?=$data['user']->login?>
+<?=$data['user']->login?><br>
 
 </body>
 </html>
